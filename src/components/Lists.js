@@ -14,7 +14,7 @@ class Lists extends React.Component {
     return (
       <tr key={cityData.city.name}>
           <td><BaiduMap lon={lon} lat={lat} /></td>
-          <td><Chart data={temps} color="orange" unit="cc"/></td>
+        <td><Chart data={temps} color="orange" unit="℃"/></td>
           <td><Chart data={pressures} color="red" unit="kPa"/></td>
           <td><Chart data={humidities} color="blue" unit="%"/></td>
       </tr>

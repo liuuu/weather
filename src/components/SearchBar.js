@@ -19,7 +19,13 @@ class SearchBar extends React.Component {
       <div className="col-md-6 offset-md-3">
 
         <form className="input-group"  onSubmit={this.handleSubmit.bind(this)}>
-          <input name="term" type="text" className="form-control" ref={(node) => this.input =node}/>
+          <input
+            name="term"
+            type="text"
+            className="form-control"
+            ref={(node) => this.input =node}
+            placeholder="输入城市的名字 比如 beijing"
+          />
           <span className="input-group-btn">
             <button className="btn btn-primary">search</button>
           </span>

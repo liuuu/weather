@@ -17,7 +17,7 @@ const Chart = (props) => {
         <SparklinesLine color={props.color}></SparklinesLine>
         <SparklinesReferenceLine type="avg"/>
       </Sparklines>
-      <div>{average(props.data)} {props.unit}{max(props.data)}</div>
+      <div>{average(props.data)} {props.unit}</div>
     </div>
   )
 }
